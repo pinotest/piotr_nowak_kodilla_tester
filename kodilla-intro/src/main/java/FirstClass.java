@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class FirstClass {
     public static void main(String[] args) {         // [2]
         Notebook notebook = new Notebook(600, 100, 2001);
@@ -14,6 +16,17 @@ public class FirstClass {
         System.out.println(newnotebook.weight+newnotebook.price);
         System.out.println(newnotebook.weight+" "+ newnotebook.price);
         newnotebook.checkPrice();
+        Grades grades = new Grades();
+        Random randomGrades = new Random();
+        for (int i = 0; i<9;i++){
+            grades.addGrades(randomGrades.nextInt(60));
+            //System.out.println(grades.getLastGrade());
+        }
+        int last = grades.getLastGrade();
+        int average = grades.getAverageGrades();
+        System.out.println("last: " + last);
+        System.out.println("average: " + average);
+
     }
 
 }

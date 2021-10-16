@@ -3,8 +3,8 @@ import java.util.Random;
 public class Loops {
     public static void main(String[] args){
         String[] names = new String[] {"Zygfryd", "Gwidon", "Florentyna"};
-        for (int i = 0; i < names.length; i++) {
-            System.out.println(names[i]);
+        for (String name : names) {
+            System.out.println(name);
         }
         for (int i = names.length - 1; i >= 0; i--) {
             System.out.println(names[i]);
@@ -24,9 +24,9 @@ public class Loops {
     }
     public static int sumOfElements(int[] counting){
         int sum = 0 ;
-        for (int i = 0; i < counting.length; i++) {
-            sum =  sum + counting[i];
-            System.out.println(counting[i]);
+        for (int j : counting) {
+            sum = sum + j;
+            System.out.println(j);
         }
         return sum;
     }
