@@ -27,6 +27,9 @@ public class FirstClass {
         System.out.println("last: " + last);
         System.out.println("average: " + average);
 
+        Book book = (Book) Book.of("Isaac Asimov", "The Galaxy");
+        System.out.println(book);
+
     }
 
 }
