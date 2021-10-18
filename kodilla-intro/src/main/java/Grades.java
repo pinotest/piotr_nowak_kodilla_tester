@@ -19,15 +19,15 @@ public class Grades {
         }else {
         return 0;
     }}
-    public int getAverageGrades(){
-        int sum = 0;
-        int avg;
+    public double getAverageGrades(){
+        double sum = 0;
+        double avg;
         if (this.size==0)
             {return 0;
         }
         else {
             for (int j : this.grades) {
-                sum = sum + j;
+                sum += j;
                 //System.out.println("sum: "+sum);
 
             }

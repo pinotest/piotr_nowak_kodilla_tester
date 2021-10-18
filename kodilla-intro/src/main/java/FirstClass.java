@@ -23,7 +23,7 @@ public class FirstClass {
             //System.out.println(grades.getLastGrade());
         }
         int last = grades.getLastGrade();
-        int average = grades.getAverageGrades();
+        double average = grades.getAverageGrades();
         System.out.println("last: " + last);
         System.out.println("average: " + average);
 
