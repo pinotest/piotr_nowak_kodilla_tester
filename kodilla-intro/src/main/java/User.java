@@ -20,14 +20,14 @@ public class User {
         User frankie = new User("Frankie", 45);
         User[] users = {anna,betty,carl,david,eva,frankie};
 
-        int ageSum = 0 ;
+        double ageSum = 0 ;
         for (int i =0; i <users.length;i++){
             ageSum = ageSum + users[i].userAge;
         }
-        int avarageAge = ageSum / users.length;
-        System.out.println("averageAge: " + avarageAge);
+        double averageAge = ageSum / users.length;
+        System.out.println("averageAge: " + averageAge);
         for (int i =0; i <users.length;i++) {
-            if (users[i].getUserAge() < avarageAge){
+            if (users[i].getUserAge() < averageAge){
             System.out.println("User with age below averageAge: " + users[i].getUserName() +" age: "+users[i].getUserAge());
         }}
 
