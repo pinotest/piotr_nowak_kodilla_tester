@@ -19,8 +19,8 @@ public class Application {
         } else {
             System.out.println("Metoda subtract nie działa poprawnie dla liczb " + a + " i " + b);
         }
-        int squere = calculator.squere(a);
-        boolean correctSquere = ResultChecker.assertEquals(25, squere);
+        double square = calculator.square(a);
+        boolean correctSquare = ResultChecker.assertEquals(25, square);
         if (correctSub) {
             System.out.println("Metoda squere działa poprawnie dla liczby " + a);
         } else {

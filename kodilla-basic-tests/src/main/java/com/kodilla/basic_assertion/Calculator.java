@@ -7,7 +7,7 @@ public class Calculator {
     public int subtract(int firstNumber, int secondNumber){
         return firstNumber-secondNumber;
     }
-    public int squere(int number){
+    public double square(double number){
         return number*number;
     }
 }
