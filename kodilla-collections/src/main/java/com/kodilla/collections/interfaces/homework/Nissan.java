@@ -16,6 +16,11 @@ public class Nissan implements Car{
     }
 
     @Override
+    public void increaseSpeed(int a) {
+        speed =+ a;
+    }
+
+    @Override
     public void decreaseSpeed() {
         speed -= 40;
     }
