@@ -5,10 +5,11 @@ import java.util.List;
 
 public class School {
     private List<Integer> pupils = new ArrayList<>(); //listę liczb uczniów w poszczególnych klasach.
-
-    public School(int... pupils) {
+    private String schoolName;
+    public School(String name, int... pupils) {
         for (int pupil : pupils)
             this.pupils.add(pupil);
+        this.schoolName = name;
     }
 
     public int getOverallPupilsNumber(){
@@ -19,4 +20,8 @@ public class School {
         return sum;
     }
 
-}
+    @Override
+    public String toString() {
+            return "School name: " + this.schoolName;
+        }
+    }
