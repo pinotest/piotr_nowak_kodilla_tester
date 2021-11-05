@@ -8,10 +8,8 @@ public class BookManager {
 
     public static Book createBook(String title, String author){
         Book book = new Book(title,author);
-        for (Book oneBook: books
+    /*    for (Book oneBook: books
         ) {
-
-
             if ((book.getTitle() == oneBook.getTitle()) && (book.getAuthor()== oneBook.getAuthor())){
                 System.out.println("######");
                 System.out.println("Book already exist!!!");
@@ -20,7 +18,12 @@ public class BookManager {
                 System.out.println("Existing book: ");
                 System.out.println(oneBook.getAuthor()+" "+oneBook.getTitle()+":"+ oneBook.hashCode());
             }
-        }
+        }*/
+        if (books.contains(book)) {
+            System.out.println("Book already exist!!!");
+            System.out.println(book.getAuthor()+" "+book.getTitle()+":"+ book.hashCode());
+                }
+        ;
         books.add(book);
         return book;
     }
