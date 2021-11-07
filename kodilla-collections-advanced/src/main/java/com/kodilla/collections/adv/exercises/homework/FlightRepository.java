@@ -14,6 +14,7 @@ public class FlightRepository {
         flightRepository.add(new Flight("London","Warsaw"));
         flightRepository.add(new Flight("London","New York"));
         flightRepository.add(new Flight("New York","Warsaw"));
+        flightRepository.add(new Flight("New London","Sao Paolo"));
 
     }
 

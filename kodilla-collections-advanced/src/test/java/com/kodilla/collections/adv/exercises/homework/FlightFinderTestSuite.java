@@ -68,4 +68,16 @@ class FlightFinderTestSuite {
         //then
         assertEquals(expectedResults,results);
     }
+
+    @Test
+    public void findFlightsTo_SaoPaolo_checkEquals(){
+        //given
+        //when
+        List<Flight> results = flightFinder.findFlightsTo("Paolo");
+        List<Flight> expectedResults = new ArrayList<>();
+
+        //then
+        assertEquals(expectedResults,results);
+
+    }
 }
