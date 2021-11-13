@@ -1,9 +1,8 @@
 package com.kodilla.stream.exception.homework;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 public class Warehouse {
 
@@ -19,8 +18,10 @@ public class Warehouse {
        Order orderNumber = orderList
                .stream()
                .filter(o -> o.getNumber().equals(number))
-               .findAny().get();
+               .findAny()
+               .orElseThrow(() -> new OrderDoesntExistException());
        return orderNumber;
+
 
    }
 }

@@ -14,8 +14,5 @@ public class WarehouseApp {
             System.out.println("Requested order number: " +Warehouse.getOrder("20").getNumber());
       } catch (OrderDoesntExistException e) {
             System.out.println("No such order in the warehouse" );
-        }catch (NoSuchElementException e){
-            System.out.println("Why should I add new type of exception?");
-        }
     }
-}
+}}
