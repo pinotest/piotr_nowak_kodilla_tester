@@ -35,4 +35,15 @@ public class myFirstTest {
                 log().
                 all();
     }
+    @Test
+    public void test4_FirstTest(){
+        given()
+//                .header("Content-type","Application json").
+  //              params(paramName, parameValue)
+
+                .get("https://reqres.in/api/users?page=2").
+                then().
+                statusCode(200).
+                body("data.first_name", hasItems("Michael", "Lindsay"));
+    }
 }
