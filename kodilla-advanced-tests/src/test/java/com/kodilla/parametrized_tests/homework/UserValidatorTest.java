@@ -14,32 +14,32 @@ class UserValidatorTest {
     @ParameterizedTest
     @ValueSource(strings= {"Stephan","Pio", "Pi.", "Pi-", "Pi1","---","...","123","aaa","AAA","___"})
     public void shouldReturnTrueWithValidateUsername(String input){
-        assertEquals(true, userValidator.validateUsername(input));
+        assertTrue(userValidator.validateUsername(input));
     }
     @ParameterizedTest
     @ValueSource(strings= {"St","P.", "P-", "P1","--","..","13","aa","AA","__"})
     public void shouldReturnFalseWithValidateUsername(String input){
-        assertEquals(false, userValidator.validateUsername(input));
+        assertFalse(userValidator.validateUsername(input));
     }
     @ParameterizedTest
     @NullAndEmptySource
     public void shouldReturnFalseIfNullWithValidateUsername(String input){
-        assertEquals(false, userValidator.validateUsername(input));
+        assertFalse(userValidator.validateUsername(input));
     }
     @ParameterizedTest
     @ValueSource(strings= {"Adam.ka@gmail.pl", "ada@b.pl", "1@1.p"})
     public void shouldReturnTrueWithValidateEmail(String input){
-        assertEquals(true, userValidator.validateEmail(input));
+        assertTrue(userValidator.validateEmail(input));
     }
     @ParameterizedTest
     @ValueSource(strings= {"S@s.1","@", "1@1.1","a@com.plplplplplpl"})
     public void shouldReturnFalseWithValidateEmail(String input){
-        assertEquals(false, userValidator.validateEmail(input));
+        assertFalse(userValidator.validateEmail(input));
     }
     @ParameterizedTest
     @NullAndEmptySource
     public void shouldReturnFalseIfNullWithValidateEmail(String input){
-        assertEquals(false, userValidator.validateEmail(input));
+        assertFalse(userValidator.validateEmail(input));
     }
 
 }
