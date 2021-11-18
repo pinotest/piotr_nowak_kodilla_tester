@@ -6,4 +6,5 @@ include 'kodilla-collections-advanced'
 include 'kodilla-stream'
 include 'my-restassured'
 include 'kodilla-advanced-tests'
+include 'execution_model'
 

@@ -4,17 +4,18 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class ShopTest {
     Shop shop = new Shop();
-    Order order1 = new Order(200.00, '2021-10-01', "zuza");
-    Order order2 = new Order(5032.11, '2021-09-01', "Benabba");
-    Order order3 = new Order(40.5, '2021-11-01', "Yoki");
-    Order order4 = new Order(420.5, '2020-10-01', "orej");
-    Order order5 = new Order(111.5, '2021-01-11', "aabbaa");
+    Order order1 = new Order(200.00, LocalDate.parse("2021-10-01"), "zuza");
+    Order order2 = new Order(5032.11, LocalDate.parse("2021-09-01"), "Benabba");
+    Order order3 = new Order(40.5, LocalDate.parse("2021-11-01"), "Yoki");
+    Order order4 = new Order(420.5, LocalDate.parse("2020-10-01"), "orej");
+    Order order5 = new Order(111.5, LocalDate.parse("2021-01-11"), "aabbaa");
 
     @Test
     public void shouldAddOrderToShop() {
@@ -28,7 +29,7 @@ class ShopTest {
     public void shouldReturnListOfOrderInGivenDateRange() {
         //Given
         //When
-        List<Order> listOfOrders = shop.getOrderListInDataRange("2021-10-01", "2021-10-01");
+        List<Order> listOfOrders = shop.getOrderListInDataRange(LocalDate.parse("2021-10-01"), LocalDate.parse("2021-10-01"));
         //Then
         assertEquals(order1, listOfOrders.get(0));
     }
@@ -37,7 +38,7 @@ class ShopTest {
     public void shouldReturnEmptyListForOrderDataRange() {
         //Given
         //When
-        List<Order> listOfOrders = shop.getOrderListInDataRange("1990-10-01", "1990-10-01");
+        List<Order> listOfOrders = shop.getOrderListInDataRange(LocalDate.parse("1990-10-01"), LocalDate.parse("1990-10-01"));
         //Then
         assertTrue(listOfOrders.isEmpty());
     }
