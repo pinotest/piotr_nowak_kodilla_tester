@@ -1,18 +1,15 @@
 package com.kodilla.parametrized_tests.homework;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.EmptySource;
-import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.NullSource;
 
-import java.sql.SQLOutput;
 import java.util.*;
 import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 class GamblingMachineTest {
     GamblingMachine gamblingMachine = new GamblingMachine();
@@ -58,9 +55,9 @@ class GamblingMachineTest {
         // convert array to the List using asList method
         List<String> listParts = Arrays.asList(strParts);
         // create HashSet from the List using constructor
-        HashSet<String> hsetFromString = new HashSet<String>( listParts );
+        HashSet<String> setFromString = new HashSet<>( listParts );
         // Convert Set of String to set of Integer
-        Set<Integer> setOfInteger = hsetFromString.stream()
+        Set<Integer> setOfInteger = setFromString.stream()
                 .map(s -> Integer.parseInt(s))
                 .collect(Collectors.toSet());
         return setOfInteger;

@@ -7,23 +7,40 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Shop {
-    private List<Order> orders = new ArrayList<>();
-    // będzie przechowywać kolekcję unikalnych zamówień.
+    private List<Order> orders = new ArrayList<>();    // będzie przechowywać kolekcję unikalnych zamówień.
     public void addOrder(Order order) {
         this.orders.add(order);
     }
     public List<Order> getOrderListInDataRange(LocalDate dateFrom, LocalDate dateTo){
-        return orders;
+        List<Order> ordersWithDatRange = new ArrayList<>();
+        for (Order order : orders
+             ) {
+            if ((order.getOrderDate().isBefore(dateTo) && order.getOrderDate().isAfter(dateFrom) )|| order.getOrderDate().isEqual(dateFrom) || order.getOrderDate().isEqual(dateTo)){
+                ordersWithDatRange.add(order);
+        }}
+        return ordersWithDatRange;
     }
     public int getSize() {
         return this.orders.size();
     }
     public double getOverallOrdersValue(){
         double sum = 0.0;
+        for (Order order: orders
+             ) {
+            sum = sum + order.getOrderValue();
+
+        }
         return sum;
     }
     public List<Order> getOrderListInValueRange(double minRange, double maxRange){
-        return orders;
+        List<Order> ordersInValueRange = new ArrayList<>();
+        for (Order order: orders
+        ) {
+            if (minRange <= order.getOrderValue() && order.getOrderValue() <= maxRange){
+                ordersInValueRange.add(order);
+            }}
+
+        return ordersInValueRange;
     }
     /*
     Nowo utworzona klasa powinna mieć następujące funkcjonalności:

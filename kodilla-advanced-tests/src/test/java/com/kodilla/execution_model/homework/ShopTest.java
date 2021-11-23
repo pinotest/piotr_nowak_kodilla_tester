@@ -29,18 +29,9 @@ class ShopTest {
     public void shouldReturnListOfOrderInGivenDateRange() {
         //Given
         //When
-        List<Order> listOfOrders = shop.getOrderListInDataRange(LocalDate.parse("2021-10-01"), LocalDate.parse("2021-10-01"));
+        List<Order> listOfOrders = shop.getOrderListInDataRange(LocalDate.parse("2021-08-01"), LocalDate.parse("2021-09-01"));
         //Then
-        assertEquals(order1, listOfOrders.get(0));
-    }
-    @ParameterizedTest
-    //use some parametrized_tests with wrong/not existing orders date range
-    public void shouldReturnEmptyListForOrderDataRange() {
-        //Given
-        //When
-        List<Order> listOfOrders = shop.getOrderListInDataRange(LocalDate.parse("1990-10-01"), LocalDate.parse("1990-10-01"));
-        //Then
-        assertTrue(listOfOrders.isEmpty());
+        assertTrue(order2.equals(listOfOrders.get(0)));
     }
     @Test
     public void shouldReturnListOfOrderInGivenOrderValuesRange() {
@@ -49,6 +40,15 @@ class ShopTest {
         List<Order> listOfOrders = shop.getOrderListInValueRange(200, 200);
         //Then
         assertEquals(order1, listOfOrders.get(0));
+    }
+    @Test
+    //use some parametrized_tests with wrong/not existing orders date range
+    public void shouldReturnEmptyListForOrderDataRange() {
+        //Given
+        //When
+        List<Order> listOfOrders = shop.getOrderListInDataRange(LocalDate.parse("1990-10-01"), LocalDate.parse("1990-10-01"));
+        //Then
+        assertTrue(listOfOrders.isEmpty());
     }
     @Test
     public void shouldReturnEmptyListForOrderValueRange() {
@@ -63,7 +63,7 @@ class ShopTest {
         //Given
         //When
         //Then
-        assertEquals(120,shop.getOverallOrdersValue());
+        assertEquals(5804.61,shop.getOverallOrdersValue());
     }
 
     @BeforeEach

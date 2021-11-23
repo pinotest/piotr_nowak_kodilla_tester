@@ -12,4 +12,16 @@ public class Order {
         this.orderLogin = orderLogin;
         this.orderValue = orderValue;
     }
+
+    public Double getOrderValue() {
+        return orderValue;
+    }
+
+    public LocalDate getOrderDate() {
+        return orderDate;
+    }
+
+    public String getOrderLogin() {
+        return orderLogin;
+    }
 }
