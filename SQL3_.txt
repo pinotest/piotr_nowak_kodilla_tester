@@ -1,0 +1,3 @@
+Insert INTO POSTS (id, user_id, Body) values(7, 1,'New post added');
+update POSTS set BODY='to_delete' where id =7 ;
+delete from posts where id = 7 ;
