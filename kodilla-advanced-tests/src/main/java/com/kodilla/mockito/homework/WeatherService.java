@@ -1,18 +1,32 @@
 package com.kodilla.mockito.homework;
 
-import com.kodilla.mockito.Client;
-import com.kodilla.mockito.Notification;
-
-import java.util.HashMap;
+import java.util.*;
 
 public class WeatherService {
-    private HashMap<Person, Subscription> weatherSubscription = new HashMap<>();
+    private HashMap<Person, Location> weatherSubscription = new HashMap<>();
 
-    public void addSubscriber(Person person, Subscription subscription) {
-        this.weatherSubscription.put(person, subscription);
+    public void addPerson(Person person, Location location) {
+        this.weatherSubscription.put(person, location);
+    }
+    public void delPersonFromOneLocation(Person person, Location location) {
+        this.weatherSubscription.remove(person, location);
+    }
+    public void delSubscriberFromEveryLocation(Person person){
+        this.weatherSubscription.remove(person);
     }
 
-    public void sendNotification(Subscription subscription) {
-      //  this.weatherSubscription.forEach(Person -> subscription.receive(notification));
+    public void sendNotificationForLocation(Location location) {
+        this.weatherSubscription.forEach((Person,Location) -> Person.receiveNotificationByLocation(location));
+    }
+    public void sendNotification() {
+        this.weatherSubscription.forEach((Person, Location) ->Person.receiveNotification());
+    }
+
+    public void delLocation(Location location){
+        this.weatherSubscription.values().remove(location);
+    }
+
+    public int getMapSize(){
+        return weatherSubscription.size();
     }
 }
