@@ -1,4 +1,4 @@
-package basic.dependency_injection.homework;
+package com.kodilla.spring.basic.dependency_injection.homework;
 
 public class FedexDelivery implements DeliveryService{
     @Override

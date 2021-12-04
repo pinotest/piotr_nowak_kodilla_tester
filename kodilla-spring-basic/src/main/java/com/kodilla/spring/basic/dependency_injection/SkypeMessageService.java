@@ -1,4 +1,4 @@
-package basic.dependency_injection;
+package com.kodilla.spring.basic.dependency_injection;
 
 public class SkypeMessageService implements MessageService {
     @Override
