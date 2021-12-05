@@ -18,11 +18,11 @@ class StringManipulatorTest {
     public void shouldCalculateStringLengthWithoutSpaces(String input, int expected) {
         assertEquals(expected, manipulator.getStringLengthWithoutSpaces(input));
     }
-    @ParameterizedTest
+   /* @ParameterizedTest
     @CsvFileSource(resources = "/stringWithLowerCase.csv", numLinesToSkip = 1)
     public void shouldCalculateStringLengthWithoutSpacesFromCSV(String input, int expected) {
         assertEquals(expected, manipulator.getStringLengthWithoutSpaces(input));
-    }
+    }*/
     @ParameterizedTest
     @MethodSource(value = "provideStringsForTestingLength")
     public void shouldCalculateStringLengthWithoutSpacesUsingMethod(String input, int expected) {

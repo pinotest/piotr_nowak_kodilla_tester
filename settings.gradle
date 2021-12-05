@@ -8,4 +8,5 @@ include 'my-restassured'
 include 'kodilla-advanced-tests'
 include 'execution_model'
 include 'com.kodilla.spring'
+include 'kodilla-spring-basic'
 
