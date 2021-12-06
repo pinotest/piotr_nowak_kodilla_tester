@@ -9,12 +9,7 @@ public interface Car {
         LocalTime localTime = LocalTime.now();
         LocalTime start = LocalTime.parse("20:00",formatter);
         LocalTime end = LocalTime.parse("6:00", formatter);
-         if (localTime.isAfter(start) && localTime.isBefore(end)) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return (localTime.isAfter(start) && localTime.isBefore(end)) ;
     }
 
     String getCarType();
