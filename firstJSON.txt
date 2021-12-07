@@ -1,0 +1,23 @@
+{
+  "name": "Monster",
+  "brand": "Volvo",
+  "chairs": [
+    {
+      "fabric": "natural leather",
+      "color": "red"
+    },
+    {
+      "fabric": "natural leather",
+      "color": "red"
+    },
+    {
+      "fabric": "natural leather",
+      "color": "red"
+    },
+    {
+      "fabric": "natural leather",
+      "color": "red"
+    }
+  ],
+  "engine_capacity": 2000
+}
