@@ -10,3 +10,4 @@
 *.ipr
 *.class
 /out/
+API_TOKEN.txt
