@@ -11,6 +11,7 @@ repositories {
 
 dependencies {
     implementation 'com.tngtech.junit.dataprovider:junit-jupiter-params-dataprovider:2.8'
+    implementation 'com.google.code.gson:gson:2.8.9'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-params:5.7.0'
     testImplementation('org.mockito:mockito-core:3.1.0')
