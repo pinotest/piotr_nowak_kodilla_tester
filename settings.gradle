@@ -11,4 +11,5 @@ include 'com.kodilla.spring'
 include 'kodilla-spring-basic'
 include 'kodilla-rest-api'
 include 'kodilla-selenium'
+include 'kodilla-google-selenium'
 
