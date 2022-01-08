@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class AllegroTestingApp {
@@ -18,7 +19,6 @@ public class AllegroTestingApp {
 
         driver.findElement(By.xpath("//button[@data-role=\"accept-consent\"]")).click();
 
-
         WebElement selectDropDown = driver.findElement(
                 By.xpath("//select[@data-role=\"filters-dropdown-toggle\"]"));
         Select yearSelect = new Select(selectDropDown);
@@ -28,5 +28,10 @@ public class AllegroTestingApp {
         searchField.sendKeys("Mavic mini");
 
         driver.findElement(By.xpath("//button[@data-role=\"search-button\"]")).click();
+
+        List<WebElement> elements = driver.findElements(By.cssSelector("section>article"));
+        for (int i = 0; i <elements.size();i++){
+            System.out.println(elements.get(i).getText());
+        }
     }
 }
