@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+}
+
+.hero{
+    background: #222f3e;
+    color: #ffffff;
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    text-align: center;
+    
+    }
+section{
+    padding-top: 36px; 
+    padding-bottom: 36px; 
+    }
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+
+    }
+img{
+    display: inline-block;
+    max-width: 48%; }
+.info {background: #c8d6e5;}
+.links{
+    color: #ee5253;}
+
+
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+      <meta charset="utf-8">
+      <title>My first website</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="hero">
+<H1>Pierwszy poziom...</h1>
+<P>Strona internetowa</p>
+</div>
+<section class="intro">
+    <div class="container">
+<H2>Css nagłówek</H2>
+<H3>Nagłówek  </H3>
+<P> Informacja 1</p>
+<P> Informacja 2</p>
+    </div>
+</section>
+<section class="galery">
+ <div class="container">
+ <img src="https://picsum.photos/id/237/200/300">
+  <img src="https://picsum.photos/seed/picsum/200/300">
+  <img src="https://picsum.photos/id/237/200/300">
+  <img src="https://picsum.photos/seed/picsum/200/300">
+  
+
+ </div>
+ </section>
+ <section class="info">
+ <div>
+<ol>
+<lh> Lista uporządkowana</lh>
+	<li>Punkt pierwszy</li>
+	<li>Punkt drugi</li>
+	<li>Punkt trzeci</li>
+</ol>
+ </div>
+ </section>
+<section class="links">
+<div>
+<ul>
+<lh> Lista nieuporządkowana</lh>
+	<li> Kodilla <a href="https://kodilla.com">Link </a></li>
+	<li> Onet <a href="https://onet.pl">Link </a></li>
+	<li>Wirtualna a href="https://wp.pl">Link</a></li>
+</ul>
+</div>
+
+</section>
+
+  </body>
+</html>
