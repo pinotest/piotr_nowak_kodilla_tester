@@ -4,12 +4,14 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.GoogleResults;
 import pages.GoogleSearch;
 
 import java.util.concurrent.TimeUnit;
 
 public class TestGoogle {
     WebDriver driver;
+    private String googleTitle = "Kodilla - Szukaj w Google";
 
     @Before
     public void testSetup() {
@@ -23,13 +25,15 @@ public class TestGoogle {
 
     @After
     public void tearDown() {
-        driver.close();
+       // driver.close();
     }
 
     @Test
     public void testGooglePage() {
         GoogleSearch googleSearch = new GoogleSearch(driver);
         googleSearch.searchResults();
+        GoogleResults googleResults = new GoogleResults(driver);
+        googleResults.clickRandomResults();
 
     }
 }
