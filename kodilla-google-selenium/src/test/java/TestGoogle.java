@@ -30,13 +30,13 @@ public class TestGoogle {
         driver.close();
     }
 
-   /* @Test
+   @Test
     public void testGooglePage() {
         GoogleSearch googleSearch = new GoogleSearch(driver);
         googleSearch.searchResults();
 
 
-    }*/
+    }
     @Test
     public void testRandomGooglePage() {
         GoogleSearch googleSearch = new GoogleSearch(driver);
