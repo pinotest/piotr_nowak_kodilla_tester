@@ -29,11 +29,12 @@ public class GoogleResults extends AbstractPage {
         System.out.println(results.size());
     }
 
-    public void clickRandomResults (){
+    public GoogleResultDetailsRandom clickRandomResults (){
         Random intNumber = new Random();
         int randomResultIndex = intNumber.nextInt(5);
         googleResultDetailsRandom = loadRandomResults(driver, randomResultIndex);
         googleResultDetailsRandom.iSeeRandomResults();
+        return googleResultDetailsRandom;
 
     }
 

@@ -1,9 +1,11 @@
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.GoogleResultDetailsRandom;
 import pages.GoogleResults;
 import pages.GoogleSearch;
 
@@ -25,15 +27,22 @@ public class TestGoogle {
 
     @After
     public void tearDown() {
-       // driver.close();
+        driver.close();
     }
 
-    @Test
+   /* @Test
     public void testGooglePage() {
         GoogleSearch googleSearch = new GoogleSearch(driver);
         googleSearch.searchResults();
-        GoogleResults googleResults = new GoogleResults(driver);
-        googleResults.clickRandomResults();
 
+
+    }*/
+    @Test
+    public void testRandomGooglePage() {
+        GoogleSearch googleSearch = new GoogleSearch(driver);
+        googleSearch.searchResults();
+        GoogleResults googleResults = new GoogleResults(driver);
+        GoogleResultDetailsRandom result = googleResults.clickRandomResults();
+        Assert.assertNotEquals(googleTitle, result.getPageTitle(driver));
     }
 }
