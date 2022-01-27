@@ -1,0 +1,76 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1643309021509,500,Home Page,429,Too Many Requests,Test 1 1-3,text,false,Test failed: code expected to contain /200/,3579,616,5,5,https://allegro.pl/,28,0,11
+1643309021509,28,Home Page-0,301,Moved Permanently,Test 1 1-3,,true,,277,310,5,5,http://www.allegro.pl/,28,0,11
+1643309021539,470,Home Page-1,429,Too Many Requests,Test 1 1-3,text,false,,3302,306,5,5,https://allegro.pl/,468,0,436
+1643309021708,302,Home Page,429,Too Many Requests,Test 1 1-4,text,false,Test failed: code expected to contain /200/,3578,616,5,5,https://allegro.pl/,27,0,13
+1643309021309,703,Home Page,429,Too Many Requests,Test 1 1-2,text,false,Test failed: code expected to contain /200/,3579,616,5,5,https://allegro.pl/,25,0,9
+1643309021309,25,Home Page-0,301,Moved Permanently,Test 1 1-2,,true,,277,310,5,5,http://www.allegro.pl/,25,0,9
+1643309021335,677,Home Page-1,429,Too Many Requests,Test 1 1-2,text,false,,3302,306,5,5,https://allegro.pl/,676,0,639
+1643309021708,27,Home Page-0,301,Moved Permanently,Test 1 1-4,,true,,277,310,5,5,http://www.allegro.pl/,27,0,13
+1643309021737,273,Home Page-1,429,Too Many Requests,Test 1 1-4,text,false,,3301,306,5,5,https://allegro.pl/,273,0,235
+1643309021244,795,Home Page,429,Too Many Requests,Test 1 1-1,text,false,Test failed: code expected to contain /200/,3579,616,5,5,https://allegro.pl/,82,0,52
+1643309021244,85,Home Page-0,301,Moved Permanently,Test 1 1-1,,true,,277,310,5,5,http://www.allegro.pl/,82,0,52
+1643309021333,706,Home Page-1,429,Too Many Requests,Test 1 1-1,text,false,,3302,306,5,5,https://allegro.pl/,705,0,639
+1643309022030,69,Home Page,429,Too Many Requests,Test 1 1-2,text,false,Test failed: code expected to contain /200/,3579,834,5,5,https://allegro.pl/,32,0,0
+1643309022030,32,Home Page-0,301,Moved Permanently,Test 1 1-2,,true,,277,310,5,5,http://www.allegro.pl/,32,0,0
+1643309022066,33,Home Page-1,429,Too Many Requests,Test 1 1-2,text,false,,3302,524,5,5,https://allegro.pl/,31,0,0
+1643309022033,70,Home Page,429,Too Many Requests,Test 1 1-3,text,false,Test failed: code expected to contain /200/,3578,834,5,5,https://allegro.pl/,39,0,0
+1643309022033,39,Home Page-0,301,Moved Permanently,Test 1 1-3,,true,,277,310,5,5,http://www.allegro.pl/,39,0,0
+1643309022073,30,Home Page-1,429,Too Many Requests,Test 1 1-3,text,false,,3301,524,5,5,https://allegro.pl/,29,0,0
+1643309022042,69,Home Page,429,Too Many Requests,Test 1 1-1,text,false,Test failed: code expected to contain /200/,3578,834,5,5,https://allegro.pl/,30,0,0
+1643309022042,31,Home Page-0,301,Moved Permanently,Test 1 1-1,,true,,277,310,5,5,http://www.allegro.pl/,30,0,0
+1643309022074,37,Home Page-1,429,Too Many Requests,Test 1 1-1,text,false,,3301,524,5,5,https://allegro.pl/,36,0,0
+1643309021979,136,Home Page,429,Too Many Requests,Test 1 1-5,text,false,Test failed: code expected to contain /200/,3579,616,5,5,https://allegro.pl/,35,0,12
+1643309021979,35,Home Page-0,301,Moved Permanently,Test 1 1-5,,true,,277,310,5,5,http://www.allegro.pl/,35,0,12
+1643309022016,99,Home Page-1,429,Too Many Requests,Test 1 1-5,text,false,,3302,306,5,5,https://allegro.pl/,98,0,69
+1643309022029,87,Home Page,429,Too Many Requests,Test 1 1-4,text,false,Test failed: code expected to contain /200/,3578,835,5,5,https://allegro.pl/,48,0,0
+1643309022029,48,Home Page-0,301,Moved Permanently,Test 1 1-4,,true,,277,310,5,5,http://www.allegro.pl/,48,0,0
+1643309022078,38,Home Page-1,429,Too Many Requests,Test 1 1-4,text,false,,3301,525,5,5,https://allegro.pl/,34,0,0
+1643309022108,45,Home Page,429,Too Many Requests,Test 1 1-3,text,false,Test failed: code expected to contain /200/,3577,834,5,5,https://allegro.pl/,18,0,0
+1643309022108,18,Home Page-0,301,Moved Permanently,Test 1 1-3,,true,,277,310,5,5,http://www.allegro.pl/,18,0,0
+1643309022127,26,Home Page-1,429,Too Many Requests,Test 1 1-3,text,false,,3300,524,5,5,https://allegro.pl/,26,0,0
+1643309022118,39,Home Page,429,Too Many Requests,Test 1 1-5,text,false,Test failed: code expected to contain /200/,3579,834,5,5,https://allegro.pl/,15,0,0
+1643309022118,15,Home Page-0,301,Moved Permanently,Test 1 1-5,,true,,277,310,5,5,http://www.allegro.pl/,15,0,0
+1643309022133,24,Home Page-1,429,Too Many Requests,Test 1 1-5,text,false,,3302,524,5,5,https://allegro.pl/,21,0,0
+1643309022104,60,Home Page,429,Too Many Requests,Test 1 1-2,text,false,Test failed: code expected to contain /200/,3579,834,5,5,https://allegro.pl/,19,0,0
+1643309022104,19,Home Page-0,301,Moved Permanently,Test 1 1-2,,true,,277,310,5,5,http://www.allegro.pl/,19,0,0
+1643309022124,40,Home Page-1,429,Too Many Requests,Test 1 1-2,text,false,,3302,524,5,5,https://allegro.pl/,39,0,0
+1643309022119,52,Home Page,429,Too Many Requests,Test 1 1-4,text,false,Test failed: code expected to contain /200/,3580,834,5,5,https://allegro.pl/,18,0,0
+1643309022119,18,Home Page-0,301,Moved Permanently,Test 1 1-4,,true,,277,310,5,5,http://www.allegro.pl/,18,0,0
+1643309022138,33,Home Page-1,429,Too Many Requests,Test 1 1-4,text,false,,3303,524,5,5,https://allegro.pl/,33,0,0
+1643309022121,53,Home Page,429,Too Many Requests,Test 1 1-1,text,false,Test failed: code expected to contain /200/,3580,834,5,5,https://allegro.pl/,18,0,0
+1643309022121,18,Home Page-0,301,Moved Permanently,Test 1 1-1,,true,,277,310,5,5,http://www.allegro.pl/,18,0,0
+1643309022139,35,Home Page-1,429,Too Many Requests,Test 1 1-1,text,false,,3303,524,5,5,https://allegro.pl/,32,0,0
+1643309022156,48,Home Page,429,Too Many Requests,Test 1 1-3,text,false,Test failed: code expected to contain /200/,3578,834,5,5,https://allegro.pl/,25,0,0
+1643309022156,25,Home Page-0,301,Moved Permanently,Test 1 1-3,,true,,277,310,5,5,http://www.allegro.pl/,25,0,0
+1643309022181,23,Home Page-1,429,Too Many Requests,Test 1 1-3,text,false,,3301,524,5,5,https://allegro.pl/,23,0,0
+1643309022160,48,Home Page,429,Too Many Requests,Test 1 1-5,text,false,Test failed: code expected to contain /200/,3577,834,5,5,https://allegro.pl/,16,0,0
+1643309022160,16,Home Page-0,301,Moved Permanently,Test 1 1-5,,true,,277,310,5,5,http://www.allegro.pl/,16,0,0
+1643309022178,30,Home Page-1,429,Too Many Requests,Test 1 1-5,text,false,,3300,524,5,5,https://allegro.pl/,25,0,0
+1643309022177,38,Home Page,429,Too Many Requests,Test 1 1-1,text,false,Test failed: code expected to contain /200/,3579,835,5,5,https://allegro.pl/,14,0,0
+1643309022177,14,Home Page-0,301,Moved Permanently,Test 1 1-1,,true,,277,310,5,5,http://www.allegro.pl/,14,0,0
+1643309022192,23,Home Page-1,429,Too Many Requests,Test 1 1-1,text,false,,3302,525,5,5,https://allegro.pl/,23,0,0
+1643309022166,53,Home Page,429,Too Many Requests,Test 1 1-2,text,false,Test failed: code expected to contain /200/,3579,834,5,5,https://allegro.pl/,16,0,0
+1643309022166,16,Home Page-0,301,Moved Permanently,Test 1 1-2,,true,,277,310,5,5,http://www.allegro.pl/,16,0,0
+1643309022183,36,Home Page-1,429,Too Many Requests,Test 1 1-2,text,false,,3302,524,5,5,https://allegro.pl/,33,0,0
+1643309022174,51,Home Page,429,Too Many Requests,Test 1 1-4,text,false,Test failed: code expected to contain /200/,3580,835,5,5,https://allegro.pl/,16,0,0
+1643309022174,16,Home Page-0,301,Moved Permanently,Test 1 1-4,,true,,277,310,5,5,http://www.allegro.pl/,16,0,0
+1643309022191,34,Home Page-1,429,Too Many Requests,Test 1 1-4,text,false,,3303,525,5,5,https://allegro.pl/,33,0,0
+1643309022210,43,Home Page,429,Too Many Requests,Test 1 1-5,text,false,Test failed: code expected to contain /200/,3579,834,5,5,https://allegro.pl/,20,0,0
+1643309022210,20,Home Page-0,301,Moved Permanently,Test 1 1-5,,true,,277,310,5,5,http://www.allegro.pl/,20,0,0
+1643309022231,22,Home Page-1,429,Too Many Requests,Test 1 1-5,text,false,,3302,524,5,5,https://allegro.pl/,21,0,0
+1643309022206,52,Home Page,429,Too Many Requests,Test 1 1-3,text,false,Test failed: code expected to contain /200/,3579,834,5,5,https://allegro.pl/,27,0,0
+1643309022206,27,Home Page-0,301,Moved Permanently,Test 1 1-3,,true,,277,310,5,5,http://www.allegro.pl/,27,0,0
+1643309022234,24,Home Page-1,429,Too Many Requests,Test 1 1-3,text,false,,3302,524,5,5,https://allegro.pl/,23,0,0
+1643309022223,55,Home Page,429,Too Many Requests,Test 1 1-2,text,false,Test failed: code expected to contain /200/,3578,834,4,4,https://allegro.pl/,21,0,0
+1643309022223,21,Home Page-0,301,Moved Permanently,Test 1 1-2,,true,,277,310,4,4,http://www.allegro.pl/,21,0,0
+1643309022244,34,Home Page-1,429,Too Many Requests,Test 1 1-2,text,false,,3301,524,4,4,https://allegro.pl/,33,0,0
+1643309022227,56,Home Page,429,Too Many Requests,Test 1 1-4,text,false,Test failed: code expected to contain /200/,3577,835,3,3,https://allegro.pl/,20,0,0
+1643309022227,20,Home Page-0,301,Moved Permanently,Test 1 1-4,,true,,277,310,3,3,http://www.allegro.pl/,20,0,0
+1643309022248,35,Home Page-1,429,Too Many Requests,Test 1 1-4,text,false,,3300,525,3,3,https://allegro.pl/,35,0,0
+1643309022219,76,Home Page,429,Too Many Requests,Test 1 1-1,text,false,Test failed: code expected to contain /200/,3577,834,2,2,https://allegro.pl/,28,0,0
+1643309022219,28,Home Page-0,301,Moved Permanently,Test 1 1-1,,true,,277,310,2,2,http://www.allegro.pl/,28,0,0
+1643309022247,48,Home Page-1,429,Too Many Requests,Test 1 1-1,text,false,,3300,524,2,2,https://allegro.pl/,48,0,0
+1643309022255,57,Home Page,429,Too Many Requests,Test 1 1-5,text,false,Test failed: code expected to contain /200/,3579,834,1,1,https://allegro.pl/,20,0,0
+1643309022255,20,Home Page-0,301,Moved Permanently,Test 1 1-5,,true,,277,310,1,1,http://www.allegro.pl/,20,0,0
+1643309022276,36,Home Page-1,429,Too Many Requests,Test 1 1-5,text,false,,3302,524,1,1,https://allegro.pl/,36,0,0
