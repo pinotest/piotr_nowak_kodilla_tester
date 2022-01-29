@@ -8,17 +8,16 @@ public class FlightFinder {
         List <Flight> departureFlights = new ArrayList<>();
         List <Flight> actualFlightRepository = FlightRepository.getFlightsTable();
         for (Flight flight: actualFlightRepository
-             ) { if (flight.getDeparture().equals(departure))
-                 departureFlights.add(flight);
+             ) { if (flight.getDeparture().equals(departure)) departureFlights.add(flight);
         }
         return departureFlights;
     }
+
     public List<Flight> findFlightsTo(String arrival){
         List <Flight> arrivalFlights = new ArrayList<>();
         List <Flight> actualFlightRepository = FlightRepository.getFlightsTable();
         for (Flight flight: actualFlightRepository
-        ) { if (flight.getArrival().equals(arrival))
-            arrivalFlights.add(flight);
+        ) { if (flight.getArrival().equals(arrival)) arrivalFlights.add(flight);
         }
         return arrivalFlights;
 

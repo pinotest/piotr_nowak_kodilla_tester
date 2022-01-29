@@ -11,10 +11,12 @@ public class Dictionary {
         dictionary.put(polishWord, englishWords);
 
     }
+
     public List<EnglishWord> findEnglishWords(String polishWord){
        // return dictionary.get(polishWord);
             return dictionary.getOrDefault(polishWord,Collections.emptyList());
     }
+
     public List<EnglishWord> findEnglishWords(String polishWord, PartOfSpeech partOfSpeech){
             List<EnglishWord> result = new ArrayList<>();
         for (EnglishWord englishWord : dictionary.getOrDefault(polishWord,Collections.emptyList())
@@ -25,6 +27,7 @@ public class Dictionary {
         }
             return result;
     }
+
     public int size(){
         return dictionary.size();
     }
