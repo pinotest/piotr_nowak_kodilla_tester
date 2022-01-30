@@ -16,4 +16,7 @@ include 'kodilla-advanced-tests:kodilla-cucumber'
 findProject(':kodilla-advanced-tests:kodilla-cucumber')?.name = 'kodilla-cucumber'
 include 'kodilla-cucumber'
 include 'kodilla-code-coverage'
+include 'kodilla-testcontainers'
+include 'kodilla-testcontainers'
+include 'fuck'
 
